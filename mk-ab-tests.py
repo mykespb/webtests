@@ -76,7 +76,7 @@ def main():
 		for c in concs:
 			for t in times:
 				fname = goodname(addr, string.ascii_letters + string.digits)
-				fname += '_t' + t + '_c' + c + '.log'
+				fname += '_t' + t + '_c' + c + '.report'
 				print (fname)
 				cmd = arg['-p'] + ' -n ' + t + ' -c ' + c + ' ' + addr + ' > ' + fname
 				print (cmd)
