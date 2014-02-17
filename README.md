@@ -37,4 +37,6 @@ Examples:
     mk-ab-tests.py addr1 -t 100,200,300 -c 10,20,30
       test addr1 with each set of times: 100, 200, 300 and
       concurrency 10, 20 and 30   
-
+    mk-ab-tests.py -f list.txt
+      text all files from file list.txt with usual parameters
+      
