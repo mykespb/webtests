@@ -44,7 +44,7 @@ from docopt import docopt
 import string, os
 
 __author__  = 'Mikhail (myke) Kolodin'
-__version__ = '0.2'
+__version__ = '0.3'
 __date__    = '2014-02-17'
 
 print ("This is mk-ab-tests.py ny %s, ver. %s of %s" % (__author__, __version__, __date__))
@@ -58,21 +58,11 @@ def goodname (s, f):
 
 def main():
 	""" main desc """
-	
 	print (arg)
 	
-	if arg['-t']:
-		if ',' in arg['-t']:
-			times = arg['-t'].split(',')
-		else:
-			times = [arg['-t']]
+	times = arg['-t'].split(',') if ',' in arg['-t'] else [arg['-t']]
 	#~ print ("times: ", times)
-	
-	if arg['-c']:
-		if ',' in arg['-c']:
-			concs = arg['-c'].split(',')
-		else:
-			concs = [arg['-c']]
+	concs = arg['-c'].split(',') if ',' in arg['-c'] else [arg['-c']]
 	#~ print ("concs: ", concs)
 	
 	if arg['-f']:
