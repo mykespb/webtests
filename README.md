@@ -40,3 +40,13 @@ Examples:
     mk-ab-tests.py -f list.txt
       text all files from file list.txt with usual parameters
       
+Requirements
+------------
+
+Uses docopt.
+
+Author
+------
+
+Mikhail (myke) Kolodin, mykespb@gmail.com
+

@@ -44,8 +44,8 @@ from docopt import docopt
 import string, os
 
 __author__  = 'Mikhail (myke) Kolodin'
-__version__ = '0.4'
-__date__    = '2014-02-17'
+__version__ = '1.1'
+__date__    = '2014-02-18'
 
 print ("This is mk-ab-tests.py ny %s, ver. %s of %s" % (__author__, __version__, __date__))
 
